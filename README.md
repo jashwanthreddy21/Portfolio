@@ -52,7 +52,7 @@ Upload-based file scanner that checks files using the VirusTotal API. Includes S
 
 📫 Contact
 
- •	🔗 Portfolio-()
+ •	[🔗 Portfolio](https://jashwanthreddy21.github.io/Portfolio/)
  •	📧 Email: cybersafe07@gmail.com
 	
 
