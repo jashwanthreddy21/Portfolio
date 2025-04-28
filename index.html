@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jashwanthreddy Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7de62ab57a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ==== Navbar ==== -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="logo" class="logoimg">
+    </div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- ==== Mobile Menu ==== -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="close-btn" onclick="toggleMenu()">×</span>
+    <ul>
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ==== Home ==== -->
+  <section id="home">
+    <div class="home-container">
+      <div class="avatar">
+        <img src="images/avatar.png" alt="avatar"/>
+      </div>
+      <div class="intro-text">
+        <div class="name-marquee">
+          <div class="name-track">
+            <span>Hai,Iam Jashwanth Reddy</span>
+            <span>Hai,Iam Jashwanth Reddy</span> <!-- Repeated for seamless loop -->
+          </div>
+        </div>
+        <h4>Cyber Security Engineer</h4>
+        <p>“Cybersecurity isn’t just about firewalls and encryption <br>— it’s about understanding how systems fail, and building them to fail gracefully.”</p>
+        <a href="images/Resume.pdf" download class="download-btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== About ==== -->
+  <section id="about">
+    <div>
+      <img src="images/profile1.png" alt="profile" class="profile-img">
+      <img src="images/profile1.png" alt="profile" class="profile-img-mobile">
+    </div>
+    <div>
+      <h2>About Me</h2>
+      <br>
+      <p>
+        Hey there 👋, I'm a passionate <strong>Cybersecurity student</strong> with a deep interest in <strong>Ethical Hacking</strong>, <strong> application security</strong>, and <strong>digital defense</strong>. My journey began with curiosity about how systems work—and more importantly, how they break.
+      </p>
+      <br>
+      <p>
+        Alongside my security training, I'm also a self-taught <strong>Web Developer</strong>, experienced in building responsive, secure, and modern web applications. From crafting sleek front-ends to securing back-end APIs, I thrive at the intersection of security and code.
+      </p>
+      <br>
+      <p>
+        I spend my time experimenting in <strong>Capture The Flag (CTF) environments</strong>,<strong> researching CVEs</strong>, and contributing to open-source projects when I can. My goal is simple: to build and break things to make the digital world a safer place.
+      </p>
+  </div>
+  
+  </section>
+
+  <!-- ==== Services ==== -->
+  <section id="services">
+    <h2>Services</h2><br>
+    <div class="services-container">
+    
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>
+          I build responsive, modern, and secure websites using HTML, CSS, JavaScript, and frameworks like React. From front-end UI to back-end logic, I develop full-stack web solutions.
+        </p>
+      </div>
+  
+      <div class="service-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Security Testing</h3>
+        <p>
+          I conduct basic to intermediate penetration testing for web applications, identifying vulnerabilities such as XSS, SQLi, CSRF, and broken authentication using tools like Burp Suite, Nmap, and OWASP methodologies.
+        </p>
+      </div>
+  
+      <div class="service-card">
+        <i class="fa-solid fa-bug"></i>
+        <h3>Bug Hunting</h3>
+        <p>
+          I actively participate in bug bounty programs and CTF competitions, analyzing applications to find real-world security flaws and responsibly disclose them to vendors.
+        </p>
+      </div>
+  
+      <div class="service-card">
+        <i class="fa-brands fa-linux"></i>
+        <h3>Linux System Hardening</h3>
+        <p>
+          Experienced with Debian-based systems — configuring firewalls, monitoring logs, patching vulnerabilities, and following hardening guides for improved system security.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+<!-- ==== Tools Used ==== -->
+<section id="tools">
+  <h2>Tools Used</h2>
+  <div class="tool-container">
+    <div class="tool">Burp Suite</div>
+    <div class="tool">Nmap</div>
+    <div class="tool">Wireshark</div>
+    <div class="tool">Metasploit</div>
+    <div class="tool">Nikto</div>
+  </div>
+</section>
+
+  <!-- ==== Skills ==== -->
+  <section id="skills">
+    <h1>Skills</h1>
+    
+    <div class="skill">
+      <h2>Java</h2>
+      <div class="skillpercentage">
+        <div class="bar">
+          <div class="fill" data-width="80%"><span>.</span></div>
+        </div>
+        <div class="percentage"><p>80%</p></div>
+      </div>
+      <div class="exp"><p>Intermediate</p><p>2 Years Experience</p></div>
+    </div>
+
+    <div class="skill">
+      <h2>Python</h2>
+      <div class="skillpercentage">
+        <div class="bar">
+          <div class="fill" data-width="90%"><span>.</span></div>
+        </div>
+        <div class="percentage"><p>90%</p></div>
+      </div>
+      <div class="exp"><p>Intermediate</p><p>2 Years Experience</p></div>
+    </div>
+
+    <div class="skill">
+      <h2>C++</h2>
+      <div class="skillpercentage">
+        <div class="bar">
+          <div class="fill" data-width="65%"><span>.</span></div>
+        </div>
+        <div class="percentage"><p>65%</p></div>
+      </div>
+      <div class="exp"><p>Intermediate</p><p>1 Years Experience</p></div>
+    </div>
+
+   <div class="skill">
+      <h2>HTML,CSS,Javascript</h2>
+      <div class="skillpercentage">
+        <div class="bar">
+          <div class="fill" data-width="85%"><span>.</span></div>
+        </div>
+        <div class="percentage"><p>85%</p></div>
+      </div>
+      <div class="exp"><p>Intermediate</p><p>1 Years Experience</p></div>
+    </div> 
+
+    <div class="skill">
+      <h2>Linux</h2>
+      <div class="skillpercentage">
+        <div class="bar">
+          <div class="fill" data-width="75%"><span>.</span></div>
+        </div>
+        <div class="percentage"><p>75%</p></div>
+      </div>
+      <div class="exp"><p>Intermediate</p><p>1 Years Experience</p></div>
+    </div>
+    
+  
+  </section>
+    
+  <!-- ==== Projects ==== -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/project1.png" alt="Project 1">
+          </div>
+          <div class="flip-card-back">
+            <h3>Weather Dashboard</h3>
+            <p>A responsive web application that fetches real-time weather data and air quality metrics using OpenWeatherMap API. Designed to visualize 5-day forecasts and display pollutant data with clean UI. The project demonstrates secure API integration, async JavaScript handling, and frontend best practices.</p>
+            <a href="https://weather-website-kag0.onrender.com"
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/project2.png" alt="Project 2">
+          </div>
+          <div class="flip-card-back">
+            <h3>Malware URL Scanner</h3>
+            <p>A web app that scans URLs for malware signatures and phishing threats using the VirusTotal API. Includes logging, result parsing, and threat classification display. Frontend features real-time results with animated progress bars.</p>
+            <a href="https://malware-scanner-1.onrender.com"
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Project 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/project3.png" alt="Project 3">
+          </div>
+          <div class="flip-card-back">
+            <h3>Malware File Scanner</h3>
+            <p>A lightweight web-based malware scanner that allows users to upload files and scan them for known malware signatures and suspicious patterns. Files are hashed and checked against the VirusTotal , then categorized as safe, suspicious, or malicious. The UI gives a clear risk rating, hash output, and scan metadata.</p>
+            <a href="#"
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="project-link">><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- ==== Contact ==== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+  
+    <p class="contact-subtext">
+      Let's connect. I’m open to collaborations, freelance work, and CTF invites.
+    </p>
+    <div class="contact-container">
+      <div>
+       <form name="submit-to-google-sheet">
+        <input name="Name" type="text" placeholder="Your Name" required><br>
+        <input name="Email" type="email" placeholder="Your Email" required><br>
+        <textarea name="Message" placeholder="Your Message" required></textarea><br>
+        <button type="submit" class="formbtn">Send Message</button><br>
+        <span id="msg">Message Sent Successful ✅</span>
+       </form>
+       
+      </div>
+  
+      <div class="contact-box">
+       
+  
+        <div class="social-icons">
+          <a href="https://github.com/jashwanthreddy21" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nandyala-jashwanth-reddy-49b4552bb/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/_back_bencher_021_/?hl=en" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <p>
+            <a href="mailto:cybersafe07@gmail.com" class="mailme"><i class="fa-solid fa-envelope"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 N.Jashwanth Reddy. All rights reserved.</p>
+
+</body>
+</html>
