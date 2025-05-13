@@ -6,36 +6,27 @@ function toggleMenu() {
 
 /* ---------------tools used---------------*/
 
-const tools = document.querySelectorAll('.tool');
+document.addEventListener("DOMContentLoaded", () => {
+  const tools = document.querySelectorAll('.tool');
+  const toolsSection = document.getElementById('tools');
 
-window.addEventListener('scroll', () => {
-  const section = document.getElementById('tools');
-  const rect = section.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tools.forEach((tool, index) => {
+          setTimeout(() => {
+            tool.classList.add("visible");
+          }, index * 150);
+        });
+      } else {
+        tools.forEach(tool => tool.classList.remove("visible"));
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
 
-  if (rect.top <= windowHeight * 0.75 && rect.bottom >= windowHeight * 0.25) {
-    // Animate each tool one by one when section is in view
-    tools.forEach((tool, index) => {
-      setTimeout(() => {
-        tool.style.transform = 'translateX(0)';
-        tool.style.opacity = '1';
-      }, index * 200); // delay each tool 200ms more than the previous
-    });
-  } else if (rect.top < 0 && rect.bottom < windowHeight * 0.25) {
-    // Animate each tool out to the left
-    tools.forEach((tool, index) => {
-      setTimeout(() => {
-        tool.style.transform = 'translateX(100vw)';
-        tool.style.opacity = '0';
-      }, index * 200); 
-    });
-  } else {
-    // Reset back to right when scrolling up
-    tools.forEach((tool) => {
-      tool.style.transform = 'translateX(-100vw)';
-      tool.style.opacity = '0';
-    });
-  }
+  observer.observe(toolsSection);
 });
 
 /* ---------------Skills---------------*/
