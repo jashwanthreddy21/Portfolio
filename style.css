@@ -206,9 +206,16 @@ section {
   font-weight: bold;
   background-color: #00ffd0;
   border-radius: 10px;
-  transform: translateX(100vw);
+  transform: translateX(0); /* Start in place */
   opacity: 0;
-  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+  position: relative;
+  left: 0;
+}
+.tool.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* ==== Skills ==== */
