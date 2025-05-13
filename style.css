@@ -492,6 +492,7 @@ footer{
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+
   .hamburger {
     display: block;
   }
@@ -596,5 +597,8 @@ footer{
     text-align: center;
     font-size: 12px;
   }
+  /*======== tools used ========*/
+  
+  
 
 }
